@@ -10,15 +10,15 @@ import CoreData
 import WebKit
 
 struct WebView: UIViewRepresentable {
-    typealias UIViewType = WKWebView
+    typealias UIViewType = UIWebView
 
-    let webView: WKWebView
+    let webView: UIWebView
     
-    func makeUIView(context: Context) -> WKWebView {
+    func makeUIView(context: Context) -> UIWebView {
         return webView
     }
     
-    func updateUIView(_ uiView: WKWebView, context: Context) { }
+    func updateUIView(_ uiView: UIWebView, context: Context) { }
 }
 
 
