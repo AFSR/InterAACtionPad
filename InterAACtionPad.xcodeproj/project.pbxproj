@@ -16,8 +16,9 @@
 		2F77F765273D3D82001C6905 /* InterAACtionPadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F77F764273D3D82001C6905 /* InterAACtionPadTests.swift */; };
 		2F77F76F273D3D82001C6905 /* InterAACtionPadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F77F76E273D3D82001C6905 /* InterAACtionPadUITests.swift */; };
 		2F77F771273D3D82001C6905 /* InterAACtionPadUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F77F770273D3D82001C6905 /* InterAACtionPadUITestsLaunchTests.swift */; };
-		2F77F77E273D4227001C6905 /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F77F77D273D4226001C6905 /* WebViewModel.swift */; };
 		2F77F986273D81B7001C6905 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 2F77F985273D81B7001C6905 /* www */; };
+		2FCAD5EE27A6A998008E0E47 /* CalibrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCAD5ED27A6A998008E0E47 /* CalibrationView.swift */; };
+		2FCAD5F127A6AAF1008E0E47 /* EyeTrackKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2FCAD5F027A6AAF1008E0E47 /* EyeTrackKit */; };
 		D968975AB7D29BC61D532D95 /* Pods_InterAACtionPad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0131557FA2D602F100FFA348 /* Pods_InterAACtionPad.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,8 +55,8 @@
 		2F77F76A273D3D82001C6905 /* InterAACtionPadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterAACtionPadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F77F76E273D3D82001C6905 /* InterAACtionPadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterAACtionPadUITests.swift; sourceTree = "<group>"; };
 		2F77F770273D3D82001C6905 /* InterAACtionPadUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterAACtionPadUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		2F77F77D273D4226001C6905 /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
 		2F77F985273D81B7001C6905 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		2FCAD5ED27A6A998008E0E47 /* CalibrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalibrationView.swift; sourceTree = "<group>"; };
 		D607349DC42BB0F7CA242C8D /* Pods-InterAACtionPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterAACtionPad.debug.xcconfig"; path = "Target Support Files/Pods-InterAACtionPad/Pods-InterAACtionPad.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D968975AB7D29BC61D532D95 /* Pods_InterAACtionPad.framework in Frameworks */,
+				2FCAD5F127A6AAF1008E0E47 /* EyeTrackKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,9 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				2F5DCF69273D8CAE00011261 /* Info.plist */,
+				2FCAD5ED27A6A998008E0E47 /* CalibrationView.swift */,
 				2F77F74E273D3D7F001C6905 /* InterAACtionPadApp.swift */,
 				2F77F750273D3D7F001C6905 /* ContentView.swift */,
-				2F77F77D273D4226001C6905 /* WebViewModel.swift */,
 				2F77F752273D3D82001C6905 /* Assets.xcassets */,
 				2F77F757273D3D82001C6905 /* Persistence.swift */,
 				2F77F759273D3D82001C6905 /* InterAACtionPad.xcdatamodeld */,
@@ -183,6 +185,9 @@
 			dependencies = (
 			);
 			name = InterAACtionPad;
+			packageProductDependencies = (
+				2FCAD5F027A6AAF1008E0E47 /* EyeTrackKit */,
+			);
 			productName = InterAACtionPad;
 			productReference = 2F77F74B273D3D7F001C6905 /* InterAACtionPad.app */;
 			productType = "com.apple.product-type.application";
@@ -255,6 +260,9 @@
 				Base,
 			);
 			mainGroup = 2F77F742273D3D7F001C6905;
+			packageReferences = (
+				2FCAD5EF27A6AAF0008E0E47 /* XCRemoteSwiftPackageReference "EyeTrackKit" */,
+			);
 			productRefGroup = 2F77F74C273D3D7F001C6905 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -343,7 +351,7 @@
 				2F77F758273D3D82001C6905 /* Persistence.swift in Sources */,
 				2F77F751273D3D7F001C6905 /* ContentView.swift in Sources */,
 				2F77F75B273D3D82001C6905 /* InterAACtionPad.xcdatamodeld in Sources */,
-				2F77F77E273D4227001C6905 /* WebViewModel.swift in Sources */,
+				2FCAD5EE27A6A998008E0E47 /* CalibrationView.swift in Sources */,
 				2F77F74F273D3D7F001C6905 /* InterAACtionPadApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -697,6 +705,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2FCAD5EF27A6AAF0008E0E47 /* XCRemoteSwiftPackageReference "EyeTrackKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ukitomato/EyeTrackKit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2FCAD5F027A6AAF1008E0E47 /* EyeTrackKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FCAD5EF27A6AAF0008E0E47 /* XCRemoteSwiftPackageReference "EyeTrackKit" */;
+			productName = EyeTrackKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		2F77F759273D3D82001C6905 /* InterAACtionPad.xcdatamodeld */ = {
