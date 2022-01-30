@@ -9,16 +9,23 @@ import SwiftUI
 import EyeTrackKit
 
 struct DotCalibration: View {
+    
+    @State private var isAnimating = false
+    
     var body: some View {
         
         ZStack{
             Image(systemName: "dpad")
+                .scaleEffect(self.isAnimating ? 0.5 : 2)
+                .position(x: UIScreen.main.bounds.width/2, y: UIScreen.main.bounds.height/2)
+                .onAppear(perform: {
+                    isAnimating = true
+                })
+                .animation(Animation.linear(duration: 1).repeatForever())
         }
-        
+        .edgesIgnoringSafeArea(.all)
     }
 }
-
-
 
 struct CalibrationView: View {
 
@@ -35,7 +42,7 @@ struct CalibrationView: View {
                  .frame(width: 25, height: 25)
                  .position(x: eyeTrackController.eyeTrack.lookAtPoint.x, y: eyeTrackController.eyeTrack.lookAtPoint.y)
         }
-        
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
