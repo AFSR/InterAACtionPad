@@ -7,11 +7,11 @@
 
 import SwiftUI
 import WebKit
-//import EyeTrackKit
+import EyeTrackKit
 
 struct WebUIView: View{
 
-    @ObservedObject var eyeTrackController: EyeTrackController = EyeTrackController(device: Device(type: .iPad), smoothingRange: 10, blinkThreshold: .infinity, isHidden: true)
+    @ObservedObject var eyeTrackController: EyeTrackController = EyeTrackController(device: Device(type: .iPadLandscape), smoothingRange: 10, blinkThreshold: .infinity, isHidden: true)
     @State var url : URL
 
     var body: some View{
@@ -45,7 +45,7 @@ struct WebView: UIViewRepresentable {
 
 struct ContentView: View {
     
-    @State var iconSize : Double = 120
+    @State var iconSize : Double = UIScreen.main.bounds.height/6
     
     var body: some View {
         
@@ -55,33 +55,32 @@ struct ContentView: View {
                   WebUIView(url: URL(string: "http://localhost:4000/index.html")!)
               } label: {
                   HStack{
-                      Text("AugCom")
                       Image("augCom_Logo")
                           .resizable()
                           .frame(width: iconSize, height: iconSize)
-                      
+                      Text("AugCom")
                   }
               }
               NavigationLink {
                   WebUIView(url: URL(string: "http://localhost:4000/InterAACtionScene/index.html")!)
               } label: {
                   HStack{
-                      Text("Visual Scene")
+                      
                       Image("visuelSceneDisplay")
                           .resizable()
                           .frame(width: iconSize, height: iconSize)
-                      
+                      Text("Visual Scene")
                   }
               }
               NavigationLink {
                   WebUIView(url: URL(string: "http://localhost:4000/InterAACtionPlayer/index.html")!)
               } label: {
                   HStack{
-                      Text("Media Player")
+                      
                       Image("gazeMediaPlayer")
                           .resizable()
                           .frame(width: iconSize, height: iconSize)
-                      
+                      Text("Media Player")
                   }
               }
           }
@@ -91,7 +90,7 @@ struct ContentView: View {
                   Button(action: {
                    })
                   {
-                      NavigationLink(destination: WebUIView(url: URL(string: "http://localhost:4000/index.html")!)) {
+                      NavigationLink(destination: CalibrationView()) {
                               Image(systemName: "cursorarrow.motionlines.click")
                       }
                   }

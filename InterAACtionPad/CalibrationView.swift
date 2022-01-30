@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import EyeTrackKit
 
 struct DotCalibration: View {
     var body: some View {
@@ -20,8 +21,21 @@ struct DotCalibration: View {
 
 
 struct CalibrationView: View {
+
+    @ObservedObject var eyeTrackController: EyeTrackController = EyeTrackController(device: Device(type: .iPadLandscape), smoothingRange: 10, blinkThreshold: .infinity, isHidden: true)
+
     var body: some View {
-        DotCalibration()
+
+        ZStack(alignment: .topLeading)
+        {
+            DotCalibration()
+            eyeTrackController.view
+            Circle()
+                 .fill(Color.blue.opacity(0.5))
+                 .frame(width: 25, height: 25)
+                 .position(x: eyeTrackController.eyeTrack.lookAtPoint.x, y: eyeTrackController.eyeTrack.lookAtPoint.y)
+        }
+        
     }
 }
 

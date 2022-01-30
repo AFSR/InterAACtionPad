@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F2E817527A72270008570AF /* GDCWebServer in Frameworks */ = {isa = PBXBuildFile; productRef = 2F2E817427A72270008570AF /* GDCWebServer */; };
 		2F77F74F273D3D7F001C6905 /* InterAACtionPadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F77F74E273D3D7F001C6905 /* InterAACtionPadApp.swift */; };
 		2F77F751273D3D7F001C6905 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F77F750273D3D7F001C6905 /* ContentView.swift */; };
 		2F77F753273D3D82001C6905 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F77F752273D3D82001C6905 /* Assets.xcassets */; };
@@ -19,7 +20,6 @@
 		2F77F986273D81B7001C6905 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 2F77F985273D81B7001C6905 /* www */; };
 		2FCAD5EE27A6A998008E0E47 /* CalibrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCAD5ED27A6A998008E0E47 /* CalibrationView.swift */; };
 		2FCAD5F127A6AAF1008E0E47 /* EyeTrackKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2FCAD5F027A6AAF1008E0E47 /* EyeTrackKit */; };
-		BFF506AD89D56FDAE9284E24 /* Pods_InterAACtionPad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC08159D6226CB2136B4E931 /* Pods_InterAACtionPad.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,9 +55,6 @@
 		2F77F770273D3D82001C6905 /* InterAACtionPadUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterAACtionPadUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2F77F985273D81B7001C6905 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		2FCAD5ED27A6A998008E0E47 /* CalibrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalibrationView.swift; sourceTree = "<group>"; };
-		4467F0274FA7F00C59150F8D /* Pods-InterAACtionPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterAACtionPad.debug.xcconfig"; path = "Target Support Files/Pods-InterAACtionPad/Pods-InterAACtionPad.debug.xcconfig"; sourceTree = "<group>"; };
-		B00B8FF91283DFBE7BFE1FA9 /* Pods-InterAACtionPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterAACtionPad.release.xcconfig"; path = "Target Support Files/Pods-InterAACtionPad/Pods-InterAACtionPad.release.xcconfig"; sourceTree = "<group>"; };
-		FC08159D6226CB2136B4E931 /* Pods_InterAACtionPad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterAACtionPad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FCAD5F127A6AAF1008E0E47 /* EyeTrackKit in Frameworks */,
-				BFF506AD89D56FDAE9284E24 /* Pods_InterAACtionPad.framework in Frameworks */,
+				2F2E817527A72270008570AF /* GDCWebServer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +92,6 @@
 				2F77F763273D3D82001C6905 /* InterAACtionPadTests */,
 				2F77F76D273D3D82001C6905 /* InterAACtionPadUITests */,
 				2F77F74C273D3D7F001C6905 /* Products */,
-				D286FA8FD6DF1D9B0344EFD0 /* Pods */,
-				B135C0D53CB34AEF2B76C5DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,23 +145,6 @@
 			path = InterAACtionPadUITests;
 			sourceTree = "<group>";
 		};
-		B135C0D53CB34AEF2B76C5DB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FC08159D6226CB2136B4E931 /* Pods_InterAACtionPad.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D286FA8FD6DF1D9B0344EFD0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4467F0274FA7F00C59150F8D /* Pods-InterAACtionPad.debug.xcconfig */,
-				B00B8FF91283DFBE7BFE1FA9 /* Pods-InterAACtionPad.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,11 +152,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F77F774273D3D82001C6905 /* Build configuration list for PBXNativeTarget "InterAACtionPad" */;
 			buildPhases = (
-				589E4D7AF11E677871FC7F0A /* [CP] Check Pods Manifest.lock */,
 				2F77F747273D3D7F001C6905 /* Sources */,
 				2F77F748273D3D7F001C6905 /* Frameworks */,
 				2F77F749273D3D7F001C6905 /* Resources */,
-				46574ADADB57BAFE63608577 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,6 +163,7 @@
 			name = InterAACtionPad;
 			packageProductDependencies = (
 				2FCAD5F027A6AAF1008E0E47 /* EyeTrackKit */,
+				2F2E817427A72270008570AF /* GDCWebServer */,
 			);
 			productName = InterAACtionPad;
 			productReference = 2F77F74B273D3D7F001C6905 /* InterAACtionPad.app */;
@@ -262,6 +239,7 @@
 			mainGroup = 2F77F742273D3D7F001C6905;
 			packageReferences = (
 				2FCAD5EF27A6AAF0008E0E47 /* XCRemoteSwiftPackageReference "EyeTrackKit" */,
+				2F2E817327A72270008570AF /* XCRemoteSwiftPackageReference "GCDWebServer" */,
 			);
 			productRefGroup = 2F77F74C273D3D7F001C6905 /* Products */;
 			projectDirPath = "";
@@ -300,48 +278,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		46574ADADB57BAFE63608577 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InterAACtionPad/Pods-InterAACtionPad-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InterAACtionPad/Pods-InterAACtionPad-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InterAACtionPad/Pods-InterAACtionPad-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		589E4D7AF11E677871FC7F0A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-InterAACtionPad-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2F77F747273D3D7F001C6905 /* Sources */ = {
@@ -507,7 +443,6 @@
 		};
 		2F77F775273D3D82001C6905 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4467F0274FA7F00C59150F8D /* Pods-InterAACtionPad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -539,7 +474,6 @@
 		};
 		2F77F776273D3D82001C6905 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B00B8FF91283DFBE7BFE1FA9 /* Pods-InterAACtionPad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -707,6 +641,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2F2E817327A72270008570AF /* XCRemoteSwiftPackageReference "GCDWebServer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yene/GCDWebServer";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		2FCAD5EF27A6AAF0008E0E47 /* XCRemoteSwiftPackageReference "EyeTrackKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ukitomato/EyeTrackKit";
@@ -718,6 +660,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2F2E817427A72270008570AF /* GDCWebServer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F2E817327A72270008570AF /* XCRemoteSwiftPackageReference "GCDWebServer" */;
+			productName = GDCWebServer;
+		};
 		2FCAD5F027A6AAF1008E0E47 /* EyeTrackKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2FCAD5EF27A6AAF0008E0E47 /* XCRemoteSwiftPackageReference "EyeTrackKit" */;

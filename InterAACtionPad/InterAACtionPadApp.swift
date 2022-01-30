@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
-import GCDWebServer
+import GDCWebServer
 
 @main
 struct InterAACtionPadApp: App {
     
-    //let persistenceController = PersistenceController.shared
+    let persistenceController = PersistenceController.shared
     @State var webServer = GCDWebServer()
     
     private func startWebServer() {
@@ -33,7 +33,7 @@ struct InterAACtionPadApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                //.environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .onAppear{
                     startWebServer()
                 }
